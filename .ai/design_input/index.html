@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+html,body{margin:0;padding:0;background:#FFFFFF;color:#0E1A12;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:inherit;text-decoration:none}
+a:hover{color:inherit}
+::selection{background:#C8E86B;color:#0E1A12}
+input,textarea,button{font:inherit;color:inherit}
+input::placeholder,textarea::placeholder{color:#8FA595}
+</style>
+</helmet>
+
+<main style="font-family:'Geist',system-ui,sans-serif;font-size:16px;line-height:1.55">
+
+<section data-screen-label="01 Hero" style="position:relative;height:100vh;min-height:620px;max-height:1100px;background:#163A24;color:#FFFFFF;overflow:hidden">
+  <image-slot id="v6-hero" shape="rect" placeholder="Hlavná fotka" src="https://images.unsplash.com/photo-1668120089662-42642838cfef?w=2400&q=80&auto=format&fit=crop" credit="Photo by Raelle Cameron on Unsplash" credit-href="https://unsplash.com/@raegocreative"></image-slot>
+  <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(6,20,11,.55) 0%,rgba(6,20,11,.08) 20%,rgba(6,20,11,.2) 40%,rgba(6,20,11,.62) 65%,rgba(6,20,11,.85) 100%)"></div>
+  <header style="position:absolute;top:0;left:0;right:0;z-index:2">
+    <div style="max-width:1440px;margin:0 auto;padding:22px clamp(20px,3vw,40px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 32px">
+      <a href="/" style="display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;letter-spacing:-.03em">
+        <span style="width:24px;height:24px;border-radius:0 50% 0 50%;background:#C8E86B"></span>
+        <span>SADO<span style="font-weight:500;color:#C8E86B">projekt</span></span>
+      </a>
+      <nav style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 32px;font-size:15px;font-weight:500">
+        <a href="/sluzby" style="color:#FFFFFF" style-hover="color:#C8E86B">Služby</a>
+        <a href="/realizacie" style="color:#FFFFFF" style-hover="color:#C8E86B">Realizácie</a>
+        <a href="/o-nas" style="color:#FFFFFF" style-hover="color:#C8E86B">O nás</a>
+        <a href="#kontakt" style="padding:11px 20px;border-radius:999px;border:1.5px solid rgba(255,255,255,.7);color:#FFFFFF;transition:all .2s" style-hover="background:#FFFFFF;color:#0E1A12">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+  <div style="position:absolute;left:0;right:0;bottom:0;pointer-events:none">
+    <div style="max-width:1440px;margin:0 auto;padding:0 clamp(20px,3vw,40px) clamp(56px,7vw,96px);display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:28px 48px">
+      <div style="flex:1 1 640px;min-width:0">
+        <div style="display:inline-flex;align-items:center;gap:12px;padding:8px 16px 8px 12px;border-radius:999px;background:rgba(6,20,11,.45);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);font-size:14px;font-weight:500;letter-spacing:.02em;color:#FFFFFF">
+          <span style="width:28px;height:1.5px;background:#C8E86B"></span>
+          <span>Piešťany · Partizánske · Vrbové a okolie</span>
+        </div>
+        <h1 style="margin:22px 0 0;font-weight:700;font-size:clamp(52px,8.4vw,136px);line-height:.92;letter-spacing:-.05em;max-width:10em;text-wrap:balance">Záhrady, v ktorých sa <span style="position:relative;display:inline-block">žije.<svg viewBox="0 0 300 30" fill="none" stroke="#C8E86B" stroke-width="5" stroke-linecap="round" aria-hidden="true" style="position:absolute;left:-2%;bottom:-.14em;width:104%;height:.26em;overflow:visible"><path d="M4 20 C60 8 140 6 220 12 C250 14 276 16 296 10"></path><path d="M30 26 C100 18 180 18 250 22"></path></svg></span></h1>
+      </div>
+      <div style="flex:0 1 380px;display:flex;flex-direction:column;gap:22px;pointer-events:auto">
+        <p style="margin:0;font-size:17px;color:#E6EEE2;text-wrap:pretty">Navrhujeme, budujeme a udržiavame záhrady — s jazierkami, skalkami, trávnikmi aj automatickou závlahou.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:10px">
+          <a href="#kontakt" style="padding:16px 26px;border-radius:999px;background:#C8E86B;color:#0E1A12;font-weight:600;transition:background .2s" style-hover="background:#DDF29A;color:#0E1A12">Dohodnúť obhliadku</a>
+          <a href="#realizacie" style="padding:16px 26px;border-radius:999px;background:rgba(255,255,255,.14);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.35);color:#FFFFFF;font-weight:600;transition:background .2s" style-hover="background:rgba(255,255,255,.26);color:#FFFFFF">Realizácie</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="max-width:1440px;margin:0 auto;padding:clamp(88px,11vw,160px) clamp(20px,3vw,40px) clamp(48px,6vw,80px);display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:32px 64px">
+  <p style="margin:0;flex:1 1 640px;min-width:0;max-width:1100px;font-weight:600;font-size:clamp(30px,3.8vw,58px);line-height:1.08;letter-spacing:-.035em;text-wrap:pretty">Kompletné služby v oblasti záhradníctva. <span style="color:#8A958C">Od návrhu cez realizáciu až po pravidelnú údržbu — všetko z jednej ruky.</span></p>
+  <svg viewBox="0 0 220 420" fill="none" stroke="#1F5132" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 auto;width:clamp(110px,13vw,190px);height:auto"><path d="M112 414 C104 330 96 250 108 170 C116 110 124 60 118 12"></path><g transform="translate(106 360) rotate(-150) scale(1)"><path d="M0 0 C12 -15 40 -15 56 0 C40 15 12 15 0 0Z"></path><path d="M2 0 L50 0"></path></g><g transform="translate(104 330) rotate(-25) scale(0.95)"><path d="M0 0 C12 -15 40 -15 56 0 C40 15 12 15 0 0Z"></path><path d="M2 0 L50 0"></path></g><g transform="translate(100 290) rotate(-160) scale(0.9)"><path d="M0 0 C12 -15 40 -15 56 0 C40 15 12 15 0 0Z"></path><path d="M2 0 L50 0"></path></g><g transform="translate(100 255) rotate(-20) scale(0.9)"><path d="M0 0 C12 -15 40 -15 56 0 C40 15 12 15 0 0Z"></path><path d="M2 0 L50 0"></path></g><g transform="translate(102 215) rotate(-150) scale(0.8)"><path d="M0 0 C12 -15 40 -15 56 0 C40 15 12 15 0 0Z"></path><path d="M2 0 L50 0"></path></g><g transform="translate(106 180) rotate(-30) scale(0.8)"><path d="M0 0 C12 -15 40 -15 56 0 C40 15 12 15 0 0Z"></path><path d="M2 0 L50 0"></path></g><g transform="translate(110 140) rotate(-145) scale(0.7)"><path d="M0 0 C12 -15 40 -15 56 0 C40 15 12 15 0 0Z"></path><path d="M2 0 L50 0"></path></g><g transform="translate(114 105) rotate(-35) scale(0.65)"><path d="M0 0 C12 -15 40 -15 56 0 C40 15 12 15 0 0Z"></path><path d="M2 0 L50 0"></path></g><g transform="translate(118 70) rotate(-130) scale(0.55)"><path d="M0 0 C12 -15 40 -15 56 0 C40 15 12 15 0 0Z"></path><path d="M2 0 L50 0"></path></g><g transform="translate(120 42) rotate(-50) scale(0.5)"><path d="M0 0 C12 -15 40 -15 56 0 C40 15 12 15 0 0Z"></path><path d="M2 0 L50 0"></path></g><path d="M118 12 C114 4 122 0 124 6"></path></svg>
+</section>
+
+<section data-screen-label="02 Služby" style="max-width:1440px;margin:0 auto;padding:0 clamp(20px,3vw,40px) clamp(96px,11vw,160px)">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:0 32px">
+    <a href="/sluzby/sadovnicke-upravy" style="display:block;padding:26px 0 36px;border-top:1.5px solid #0E1A12" style-hover="color:#1F5132">
+      <span style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px"><span style="font-size:14px;font-weight:600;color:#1F5132">01</span><svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="#1F5132" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 30 H33 L31 42 H17 Z"></path><path d="M24 30 V16"></path><path d="M24 23 C18 23 14 19 14 13 C20 13 24 17 24 23 Z"></path><path d="M24 19 C30 19 34 15 34 9 C28 9 24 13 24 19 Z"></path></svg></span>
+      <span style="display:block;margin-top:20px;font-weight:600;font-size:23px;line-height:1.2;letter-spacing:-.02em">Návrhy a realizácia sadovníckych úprav</span>
+      <span style="display:block;margin-top:10px;color:#4E5A52">Výsadba drevín, kvetinové záhony v interiéri aj exteriéri, mobilné nádoby.</span>
+    </a>
+    <a href="/sluzby/jazierka" style="display:block;padding:26px 0 36px;border-top:1.5px solid #0E1A12" style-hover="color:#1F5132">
+      <span style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px"><span style="font-size:14px;font-weight:600;color:#1F5132">02</span><svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="#1F5132" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="22" cy="35" rx="17" ry="6.5"></ellipse><path d="M13 35 C16 33.5 19 33.5 22 35"></path><path d="M23 38.5 C26 37.5 29 37.5 32 38.5"></path><path d="M36 31 V20"></path><ellipse cx="36" cy="15" rx="2" ry="4.5"></ellipse><path d="M40 31 C40 25 42 20 45 17"></path></svg></span>
+      <span style="display:block;margin-top:20px;font-weight:600;font-size:23px;line-height:1.2;letter-spacing:-.02em">Záhradné jazierka</span>
+      <span style="display:block;margin-top:10px;color:#4E5A52">Budovanie a osádzanie jazierok z fólie, laminátu alebo plastu.</span>
+    </a>
+    <a href="/sluzby/skalky-potoky-vodopady" style="display:block;padding:26px 0 36px;border-top:1.5px solid #0E1A12" style-hover="color:#1F5132">
+      <span style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px"><span style="font-size:14px;font-weight:600;color:#1F5132">03</span><svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="#1F5132" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 8 H34"></path><path d="M20 8 C20 16 21 22 24 30"></path><path d="M26 8 C26 14 27 20 30 28"></path><path d="M5 43 C5 36 10 32 16 34 C19 29 27 29 30 34 C36 32 43 36 43 43 Z"></path></svg></span>
+      <span style="display:block;margin-top:20px;font-weight:600;font-size:23px;line-height:1.2;letter-spacing:-.02em">Skalky, potoky a vodopády</span>
+      <span style="display:block;margin-top:10px;color:#4E5A52">Postavíme ich presne podľa vašich požiadaviek.</span>
+    </a>
+    <a href="/sluzby/travniky" style="display:block;padding:26px 0 36px;border-top:1.5px solid #0E1A12" style-hover="color:#1F5132">
+      <span style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px"><span style="font-size:14px;font-weight:600;color:#1F5132">04</span><svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="#1F5132" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 41 H43"></path><path d="M12 41 C12 35 11 31 8 28"></path><path d="M18 41 C18 31 20 24 24 18"></path><path d="M25 41 C25 31 23 23 19 13"></path><path d="M31 41 C31 33 33 27 38 23"></path><path d="M37 41 C37 37 38 34 41 32"></path></svg></span>
+      <span style="display:block;margin-top:20px;font-weight:600;font-size:23px;line-height:1.2;letter-spacing:-.02em">Trávniky</span>
+      <span style="display:block;margin-top:10px;color:#4E5A52">Nové trávniky výsevom alebo z trávnatých kobercov. Prevzdušňovanie a hnojenie existujúcich.</span>
+    </a>
+    <a href="/sluzby/zavlaha" style="display:block;padding:26px 0 36px;border-top:1.5px solid #0E1A12" style-hover="color:#1F5132">
+      <span style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px"><span style="font-size:14px;font-weight:600;color:#1F5132">05</span><svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="#1F5132" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 43 H30"></path><path d="M22 43 V31 H26 V43"></path><path d="M24 31 C19 24 13 21 6 21"></path><path d="M24 31 C29 24 35 21 42 21"></path><circle cx="9" cy="14" r="1"></circle><circle cx="16" cy="10" r="1"></circle><circle cx="24" cy="8" r="1"></circle><circle cx="32" cy="10" r="1"></circle><circle cx="39" cy="14" r="1"></circle></svg></span>
+      <span style="display:block;margin-top:20px;font-weight:600;font-size:23px;line-height:1.2;letter-spacing:-.02em">Automatická závlaha TORO</span>
+      <span style="display:block;margin-top:10px;color:#4E5A52">Automatický závlahový systém od firmy TORO.</span>
+    </a>
+    <a href="/sluzby/udrzba-zelene" style="display:block;padding:26px 0 36px;border-top:1.5px solid #0E1A12" style-hover="color:#1F5132">
+      <span style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px"><span style="font-size:14px;font-weight:600;color:#1F5132">06</span><svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="#1F5132" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 24 C20 16 15 10 9 6"></path><path d="M24 24 C28 16 33 10 39 6"></path><path d="M24 24 L18 31"></path><path d="M24 24 L30 31"></path><circle cx="15" cy="36" r="5"></circle><circle cx="33" cy="36" r="5"></circle><circle cx="24" cy="24" r="1.2"></circle></svg></span>
+      <span style="display:block;margin-top:20px;font-weight:600;font-size:23px;line-height:1.2;letter-spacing:-.02em">Údržba zelene</span>
+      <span style="display:block;margin-top:10px;color:#4E5A52">Kosenie trávnikov, strihanie živých plotov a kríkov, odburinenie výsadieb.</span>
+    </a>
+    <a href="/sluzby/stromy" style="display:block;padding:26px 0 36px;border-top:1.5px solid #0E1A12" style-hover="color:#1F5132">
+      <span style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px"><span style="font-size:14px;font-weight:600;color:#1F5132">07</span><svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="#1F5132" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 44 H34"></path><path d="M24 44 V26"></path><path d="M24 33 L18 27"></path><path d="M24 31 L30 25"></path><path d="M24 26 C14 26 8 20 10 13 C12 7 18 4 24 6 C30 4 37 7 38 13 C40 20 34 26 24 26 Z"></path></svg></span>
+      <span style="display:block;margin-top:20px;font-weight:600;font-size:23px;line-height:1.2;letter-spacing:-.02em">Ošetrovanie stromov</span>
+      <span style="display:block;margin-top:10px;color:#4E5A52">Orezávky a výruby okrasných aj ovocných stromov, postreky proti škodcom.</span>
+    </a>
+    <a href="#kontakt" style="display:flex;flex-direction:column;justify-content:space-between;gap:20px;padding:26px 26px 30px;margin:0 0 32px;border-top:1.5px solid #1F5132;background:#1F5132;color:#FFFFFF;border-radius:0 0 18px 18px;transition:background .2s;position:relative;overflow:hidden" style-hover="background:#143823;color:#FFFFFF">
+      <span style="font-weight:600;font-size:23px;line-height:1.2;letter-spacing:-.02em">Neviete, čo presne potrebujete? Poradíme vám na mieste.</span>
+      <span style="font-weight:600;color:#C8E86B">Dohodnúť obhliadku →</span>
+      <svg viewBox="0 0 200 420" fill="none" stroke="#C8E86B" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" style="position:absolute;right:-30px;bottom:-70px;width:150px;height:auto;opacity:.35;transform:rotate(-18deg);pointer-events:none"><path d="M100 416 C98 300 102 160 100 20"></path><path d="M100 380 C65 372 40.5 360 30 346"></path><path d="M100 380 C135 372 159.5 360 170 346"></path><path d="M100 350 C67.25 342 44.325 330 34.5 316"></path><path d="M100 350 C132.75 342 155.675 330 165.5 316"></path><path d="M100 320 C69.5 312 48.15 300 39 286"></path><path d="M100 320 C130.5 312 151.85 300 161 286"></path><path d="M100 290 C71.75 282 51.975 270 43.5 256"></path><path d="M100 290 C128.25 282 148.025 270 156.5 256"></path><path d="M100 260 C74 252 55.800000000000004 240 48 226"></path><path d="M100 260 C126 252 144.2 240 152 226"></path><path d="M100 230 C76.25 222 59.625 210 52.5 196"></path><path d="M100 230 C123.75 222 140.375 210 147.5 196"></path><path d="M100 200 C78.5 192 63.45 180 57 166"></path><path d="M100 200 C121.5 192 136.55 180 143 166"></path><path d="M100 170 C80.75 162 67.275 150 61.5 136"></path><path d="M100 170 C119.25 162 132.725 150 138.5 136"></path><path d="M100 140 C83 132 71.1 120 66 106"></path><path d="M100 140 C117 132 128.9 120 134 106"></path><path d="M100 110 C85.25 102 74.925 90 70.5 76"></path><path d="M100 110 C114.75 102 125.075 90 129.5 76"></path><path d="M100 80 C87.5 72 78.75 60 75 46"></path><path d="M100 80 C112.5 72 121.25 60 125 46"></path><path d="M100 50 C89.75 42 82.575 30 79.5 16"></path><path d="M100 50 C110.25 42 117.425 30 120.5 16"></path></svg>
+    </a>
+  </div>
+</section>
+
+<section data-screen-label="03 Filmový pás" style="position:relative;height:clamp(520px,88vh,900px);background:#163A24;color:#FFFFFF;overflow:hidden">
+  <image-slot id="v6-band" shape="rect" placeholder="Atmosférická fotka záhrady" src="https://images.unsplash.com/photo-1713383658268-6b9bd03beb19?w=2400&q=80&auto=format&fit=crop" credit="Photo by Khrystyna Khristianova on Unsplash" credit-href="https://unsplash.com/@kkhrysty"></image-slot>
+  <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(10,34,19,.82) 0%,rgba(10,34,19,.45) 50%,rgba(10,34,19,.05) 100%)"></div>
+  <div style="position:absolute;inset:0;pointer-events:none;display:flex;align-items:center">
+    <div style="width:100%;max-width:1440px;margin:0 auto;padding:0 clamp(20px,3vw,40px)">
+      <h2 style="margin:0;max-width:9em;font-weight:700;font-size:clamp(44px,6.4vw,104px);line-height:.95;letter-spacing:-.05em;text-wrap:balance">Od prvého náčrtu po posledné kosenie.</h2>
+      <p style="margin:28px 0 0;max-width:440px;font-size:18px;color:#DCEBCF;text-wrap:pretty">Celé okolie domu riešime ako jeden celok — aby záhrada fungovala aj o desať rokov.</p>
+    </div>
+  </div>
+</section>
+
+<section id="realizacie" data-screen-label="04 Realizácie" style="background:#FFFFFF">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(96px,11vw,160px) clamp(20px,3vw,40px)">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px 48px">
+      <div style="max-width:640px">
+        <h2 style="margin:0;font-weight:700;font-size:clamp(44px,5.6vw,84px);line-height:.95;letter-spacing:-.05em;display:flex;align-items:center;gap:18px">Realizácie<svg viewBox="0 0 60 60" fill="none" stroke="#1F5132" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:.6em;height:.6em;flex:0 0 auto"><path d="M8 52 C8 26 26 8 52 8 C52 34 34 52 8 52 Z"></path><path d="M8 52 L44 16"></path><path d="M20 40 V30 M20 40 H30 M30 30 V20 M30 30 H40"></path></svg></h2>
+        <p style="margin:18px 0 0;font-size:18px;color:#4E5A52;text-wrap:pretty">Okrasné záhrady, kvetinové záhony, mobilné nádoby, skalky, jazierka aj trávnaté koberce.</p>
+      </div>
+      <a href="/realizacie" style="padding:14px 24px;border-radius:999px;border:1.5px solid #0E1A12;font-weight:600;transition:background .2s" style-hover="background:#0E1A12;color:#FFFFFF">Celá fotogaléria →</a>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,calc(50% - 6px)),1fr));grid-auto-rows:clamp(200px,22vw,320px);gap:12px;margin-top:48px">
+      <a href="/realizacie/celkove-upravy" style="position:relative;grid-column:span 2;grid-row:span 2;border-radius:20px;overflow:hidden;display:block;background:#2C4F36;min-width:0">
+        <image-slot id="v6-cat-celkove" shape="rect" placeholder="Celkové úpravy" src="https://images.unsplash.com/photo-1700689807667-82630348b301?w=1800&q=80&auto=format&fit=crop" credit="Photo by Annie Tray-Gavin on Unsplash" credit-href="https://unsplash.com/@annietraygavin"></image-slot>
+        <span style="position:absolute;left:12px;top:12px;padding:8px 14px;border-radius:999px;background:#FFFFFF;color:#0E1A12;font-weight:600;font-size:15px;pointer-events:none">Celkové úpravy</span>
+      </a>
+      <a href="/realizacie/jazierka" style="position:relative;border-radius:20px;overflow:hidden;display:block;background:#3A5F45">
+        <image-slot id="v6-cat-jazierka" shape="rect" placeholder="Jazierka" src="https://images.unsplash.com/photo-1716704445747-fc02c11392ad?w=1200&q=80&auto=format&fit=crop" credit="Photo by acubarry on Unsplash" credit-href="https://unsplash.com/@acubarry"></image-slot>
+        <span style="position:absolute;left:12px;top:12px;padding:8px 14px;border-radius:999px;background:#FFFFFF;color:#0E1A12;font-weight:600;font-size:15px;pointer-events:none">Jazierka</span>
+      </a>
+      <a href="/realizacie/skalky" style="position:relative;border-radius:20px;overflow:hidden;display:block;background:#4A6450">
+        <image-slot id="v6-cat-skalky" shape="rect" placeholder="Skalky" src="https://images.unsplash.com/photo-1659242484336-edb4f31b0d0c?w=1200&q=80&auto=format&fit=crop" credit="Photo by Riza Gabriela on Unsplash" credit-href="https://unsplash.com/@rshimjeong"></image-slot>
+        <span style="position:absolute;left:12px;top:12px;padding:8px 14px;border-radius:999px;background:#FFFFFF;color:#0E1A12;font-weight:600;font-size:15px;pointer-events:none">Skalky</span>
+      </a>
+      <a href="/realizacie/upravy-namesti" style="position:relative;border-radius:20px;overflow:hidden;display:block;background:#3A5F45">
+        <image-slot id="v6-cat-namestia" shape="rect" placeholder="Úpravy námestí" src="https://images.unsplash.com/photo-1682674397030-4c36c1456c9d?w=1200&q=80&auto=format&fit=crop" credit="Photo by Nico Knaack on Unsplash" credit-href="https://unsplash.com/@xoxnk"></image-slot>
+        <span style="position:absolute;left:12px;top:12px;padding:8px 14px;border-radius:999px;background:#FFFFFF;color:#0E1A12;font-weight:600;font-size:15px;pointer-events:none">Úpravy námestí</span>
+      </a>
+      <a href="/realizacie/mobilne-nadoby" style="position:relative;border-radius:20px;overflow:hidden;display:block;background:#2C4F36">
+        <image-slot id="v6-cat-nadoby" shape="rect" placeholder="Mobilné nádoby" src="https://images.unsplash.com/photo-1719206431239-c5218d1443bc?w=1200&q=80&auto=format&fit=crop" credit="Photo by Ashish R. Mishra on Unsplash" credit-href="https://unsplash.com/@shotoftheday"></image-slot>
+        <span style="position:absolute;left:12px;top:12px;padding:8px 14px;border-radius:999px;background:#FFFFFF;color:#0E1A12;font-weight:600;font-size:15px;pointer-events:none">Mobilné nádoby</span>
+      </a>
+      <a href="/realizacie/interier" style="position:relative;border-radius:20px;overflow:hidden;display:block;background:#4A6450">
+        <image-slot id="v6-cat-interier" shape="rect" placeholder="Interiér" src="https://images.unsplash.com/photo-1463320898484-cdee8141c787?w=1200&q=80&auto=format&fit=crop" credit="Photo by freddie marriage on Unsplash" credit-href="https://unsplash.com/@fredmarriage"></image-slot>
+        <span style="position:absolute;left:12px;top:12px;padding:8px 14px;border-radius:999px;background:#FFFFFF;color:#0E1A12;font-weight:600;font-size:15px;pointer-events:none">Interiér</span>
+      </a>
+    </div>
+
+    <div style="margin-top:clamp(72px,8vw,110px)">
+      <h3 style="margin:0;font-size:15px;font-weight:600;color:#1F5132">Pracovali sme napríklad pre</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:0 32px;margin-top:18px">
+        <div style="padding:18px 0;border-top:1px solid #D5DED1"><div style="font-weight:600;font-size:21px;letter-spacing:-.02em">RIALTO s.r.o.</div><div style="color:#4E5A52">Partizánske</div></div>
+        <div style="padding:18px 0;border-top:1px solid #D5DED1"><div style="font-weight:600;font-size:21px;letter-spacing:-.02em">Pešia zóna Piešťany</div><div style="color:#4E5A52">Centrum</div></div>
+        <div style="padding:18px 0;border-top:1px solid #D5DED1"><div style="font-weight:600;font-size:21px;letter-spacing:-.02em">Autocentrum SEAT</div><div style="color:#4E5A52">Piešťany</div></div>
+        <div style="padding:18px 0;border-top:1px solid #D5DED1"><div style="font-weight:600;font-size:21px;letter-spacing:-.02em">Terasa kaviarne LAVAZZA</div><div style="color:#4E5A52">Centrum</div></div>
+        <div style="padding:18px 0;border-top:1px solid #D5DED1"><div style="font-weight:600;font-size:21px;letter-spacing:-.02em">SEMICRON a.s.</div><div style="color:#4E5A52">Vrbové</div></div>
+        <div style="padding:18px 0;border-top:1px solid #D5DED1"><div style="font-weight:600;font-size:21px;letter-spacing:-.02em">Vila PAVLA</div><div style="color:#4E5A52">Piešťany</div></div>
+      </div>
+      <p style="margin:16px 0 0;color:#4E5A52">…a mnoho ďalších rodinných domov, predzáhradiek a chát.</p>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="05 Postup" style="position:relative;background:#143823;color:#FFFFFF;overflow:hidden">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(96px,11vw,160px) clamp(20px,3vw,40px)">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px 48px">
+      <h2 style="margin:0;font-weight:700;font-size:clamp(44px,5.6vw,84px);line-height:.95;letter-spacing:-.05em">Ako to prebieha</h2>
+      <p style="margin:0;max-width:380px;color:#B9CDB9;text-wrap:pretty">Štyri kroky. Jeden tím od začiatku až do konca.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:0;margin-top:64px;border-top:1px solid rgba(200,232,107,.28)">
+      <div style="padding:32px 28px 40px;border-bottom:1px solid rgba(200,232,107,.28);border-right:1px solid rgba(200,232,107,.28)">
+        <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px"><div style="font-weight:700;font-size:72px;line-height:1;letter-spacing:-.05em;color:#C8E86B">1</div><svg viewBox="0 0 64 64" width="76" height="76" fill="none" stroke="#C8E86B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 46 H58"></path><path d="M12 52 h2 M24 55 h2 M40 54 h2 M52 51 h2" stroke-opacity=".5"></path><ellipse cx="32" cy="38" rx="5" ry="3.5" transform="rotate(-20 32 38)"></ellipse><path d="M34 34.5 C35 31 37 29 40 28"></path></svg></div>
+        <h3 style="margin:36px 0 0;font-weight:600;font-size:22px;letter-spacing:-.02em">Obhliadka</h3>
+        <p style="margin:8px 0 0;color:#B9CDB9;text-wrap:pretty">Osobne vás navštívime a vypočujeme si, čo si predstavujete.</p>
+      </div>
+      <div style="padding:32px 28px 40px;border-bottom:1px solid rgba(200,232,107,.28);border-right:1px solid rgba(200,232,107,.28)">
+        <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px"><div style="font-weight:700;font-size:72px;line-height:1;letter-spacing:-.05em;color:#C8E86B">2</div><svg viewBox="0 0 64 64" width="76" height="76" fill="none" stroke="#C8E86B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 46 H58"></path><path d="M12 52 h2 M24 55 h2 M40 54 h2 M52 51 h2" stroke-opacity=".5"></path><path d="M32 46 V32"></path><path d="M32 37 C26 37 21 33 21 28 C27 28 32 32 32 37 Z"></path><path d="M32 34 C38 34 43 30 43 25 C37 25 32 29 32 34 Z"></path><path d="M32 46 C31 50 33 52 32 57"></path></svg></div>
+        <h3 style="margin:36px 0 0;font-weight:600;font-size:22px;letter-spacing:-.02em">Pracovný projekt</h3>
+        <p style="margin:8px 0 0;color:#B9CDB9;text-wrap:pretty">Podľa vašich požiadaviek pripravíme pracovný projekt.</p>
+      </div>
+      <div style="padding:32px 28px 40px;border-bottom:1px solid rgba(200,232,107,.28);border-right:1px solid rgba(200,232,107,.28)">
+        <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px"><div style="font-weight:700;font-size:72px;line-height:1;letter-spacing:-.05em;color:#C8E86B">3</div><svg viewBox="0 0 64 64" width="76" height="76" fill="none" stroke="#C8E86B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 46 H58"></path><path d="M12 52 h2 M24 55 h2 M40 54 h2 M52 51 h2" stroke-opacity=".5"></path><path d="M32 46 C32 34 33 22 32 9"></path><path d="M32 40 C25 40 19 36 19 30 C26 30 32 34 32 40 Z"></path><path d="M32.5 32 C39.5 32 45 28 45 22 C38 22 32.5 26 32.5 32 Z"></path><path d="M32.5 24 C27 24 23 20 23 15 C28.5 15 32.5 19 32.5 24 Z"></path><path d="M32 9 C34 6 37 6 38 8"></path><path d="M32 46 C30 51 34 53 32 58"></path></svg></div>
+        <h3 style="margin:36px 0 0;font-weight:600;font-size:22px;letter-spacing:-.02em">Realizácia</h3>
+        <p style="margin:8px 0 0;color:#B9CDB9;text-wrap:pretty">Jazierka, skalky, závlaha, trávnik, výsadba aj mobilné nádoby.</p>
+      </div>
+      <div style="padding:32px 28px 40px;border-bottom:1px solid rgba(200,232,107,.28);border-right:1px solid rgba(200,232,107,.28)">
+        <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px"><div style="font-weight:700;font-size:72px;line-height:1;letter-spacing:-.05em;color:#C8E86B">4</div><svg viewBox="0 0 64 64" width="76" height="76" fill="none" stroke="#C8E86B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 46 H58"></path><path d="M12 52 h2 M24 55 h2 M40 54 h2 M52 51 h2" stroke-opacity=".5"></path><path d="M32 46 V30"></path><path d="M32 38 L26 32"></path><path d="M32 35 L38 29"></path><path d="M32 30 C20 30 12 24 14 16 C15 9 22 4 30 6 C36 2 46 6 48 13 C54 18 50 30 32 30 Z"></path><path d="M32 46 C28 50 24 51 20 51"></path><path d="M32 46 C36 50 40 51 44 51"></path></svg></div>
+        <h3 style="margin:36px 0 0;font-weight:600;font-size:22px;letter-spacing:-.02em">Údržba</h3>
+        <p style="margin:8px 0 0;color:#B9CDB9;text-wrap:pretty">O vytvorené priestory sa postaráme aj po dokončení.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="06 O nás" style="background:#F1F5EC;position:relative;overflow:hidden">
+  <svg viewBox="0 0 220 420" fill="none" stroke="#1F5132" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="position:absolute;right:-60px;top:-40px;width:clamp(200px,22vw,320px);height:auto;opacity:.16;transform:rotate(200deg);pointer-events:none"><path d="M112 414 C104 330 96 250 108 170 C116 110 124 60 118 12"></path><g transform="translate(106 360) rotate(-150) scale(1)"><path d="M0 0 C12 -15 40 -15 56 0 C40 15 12 15 0 0Z"></path><path d="M2 0 L50 0"></path></g><g transform="translate(104 330) rotate(-25) scale(0.95)"><path d="M0 0 C12 -15 40 -15 56 0 C40 15 12 15 0 0Z"></path><path d="M2 0 L50 0"></path></g><g transform="translate(100 290) rotate(-160) scale(0.9)"><path d="M0 0 C12 -15 40 -15 56 0 C40 15 12 15 0 0Z"></path><path d="M2 0 L50 0"></path></g><g transform="translate(100 255) rotate(-20) scale(0.9)"><path d="M0 0 C12 -15 40 -15 56 0 C40 15 12 15 0 0Z"></path><path d="M2 0 L50 0"></path></g><g transform="translate(102 215) rotate(-150) scale(0.8)"><path d="M0 0 C12 -15 40 -15 56 0 C40 15 12 15 0 0Z"></path><path d="M2 0 L50 0"></path></g><g transform="translate(106 180) rotate(-30) scale(0.8)"><path d="M0 0 C12 -15 40 -15 56 0 C40 15 12 15 0 0Z"></path><path d="M2 0 L50 0"></path></g><g transform="translate(110 140) rotate(-145) scale(0.7)"><path d="M0 0 C12 -15 40 -15 56 0 C40 15 12 15 0 0Z"></path><path d="M2 0 L50 0"></path></g><g transform="translate(114 105) rotate(-35) scale(0.65)"><path d="M0 0 C12 -15 40 -15 56 0 C40 15 12 15 0 0Z"></path><path d="M2 0 L50 0"></path></g><g transform="translate(118 70) rotate(-130) scale(0.55)"><path d="M0 0 C12 -15 40 -15 56 0 C40 15 12 15 0 0Z"></path><path d="M2 0 L50 0"></path></g><g transform="translate(120 42) rotate(-50) scale(0.5)"><path d="M0 0 C12 -15 40 -15 56 0 C40 15 12 15 0 0Z"></path><path d="M2 0 L50 0"></path></g><path d="M118 12 C114 4 122 0 124 6"></path></svg>
+  <div style="position:relative;max-width:1440px;margin:0 auto;padding:clamp(96px,11vw,160px) clamp(20px,3vw,40px);display:flex;flex-wrap:wrap;gap:40px clamp(32px,6vw,110px);align-items:center">
+    <div style="flex:1 1 460px;min-width:0;position:relative;aspect-ratio:4/5;max-height:760px;border-radius:24px;overflow:hidden;background:#C9D9C0">
+      <image-slot id="v6-about" shape="rect" placeholder="Fotka tímu pri práci" src="https://images.unsplash.com/photo-1734079692160-fcbe4be6ab96?w=1400&q=80&auto=format&fit=crop" credit="Photo by FRAEM GmbH on Unsplash" credit-href="https://unsplash.com/@fraem"></image-slot>
+    </div>
+    <div style="flex:1 1 440px;min-width:0">
+      <h2 style="margin:0;font-weight:700;font-size:clamp(44px,5.6vw,84px);line-height:.95;letter-spacing:-.05em">O nás</h2>
+      <p style="margin:28px 0 0;max-width:560px;font-size:clamp(20px,1.8vw,26px);line-height:1.35;font-weight:500;letter-spacing:-.015em;text-wrap:pretty">Staráme sa o celé okolie domu — od prvého návrhu až po pravidelné kosenie.</p>
+      <p style="margin:18px 0 0;max-width:540px;color:#4E5A52;text-wrap:pretty">Všetky práce robíme na vysokej profesionálnej úrovni. Naši pracovníci majú odborné vzdelanie, kvalifikáciu a dlhoročné skúsenosti z praxe. Fotky z nášho archívu vám radi ukážeme aj pri osobnom stretnutí.</p>
+      <a href="/o-nas" style="display:inline-flex;margin-top:32px;padding:14px 24px;border-radius:999px;background:#1F5132;color:#FFFFFF;font-weight:600;transition:background .2s" style-hover="background:#143823;color:#FFFFFF">Viac o nás →</a>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt" data-screen-label="07 Kontakt" style="background:#0D2617;color:#FFFFFF;position:relative;overflow:hidden">
+  <svg viewBox="0 0 200 420" fill="none" stroke="#C8E86B" stroke-width="1.4" stroke-linecap="round" aria-hidden="true" style="position:absolute;left:-50px;bottom:40px;width:clamp(180px,18vw,260px);height:auto;opacity:.18;transform:rotate(24deg);pointer-events:none"><path d="M100 416 C98 300 102 160 100 20"></path><path d="M100 380 C65 372 40.5 360 30 346"></path><path d="M100 380 C135 372 159.5 360 170 346"></path><path d="M100 350 C67.25 342 44.325 330 34.5 316"></path><path d="M100 350 C132.75 342 155.675 330 165.5 316"></path><path d="M100 320 C69.5 312 48.15 300 39 286"></path><path d="M100 320 C130.5 312 151.85 300 161 286"></path><path d="M100 290 C71.75 282 51.975 270 43.5 256"></path><path d="M100 290 C128.25 282 148.025 270 156.5 256"></path><path d="M100 260 C74 252 55.800000000000004 240 48 226"></path><path d="M100 260 C126 252 144.2 240 152 226"></path><path d="M100 230 C76.25 222 59.625 210 52.5 196"></path><path d="M100 230 C123.75 222 140.375 210 147.5 196"></path><path d="M100 200 C78.5 192 63.45 180 57 166"></path><path d="M100 200 C121.5 192 136.55 180 143 166"></path><path d="M100 170 C80.75 162 67.275 150 61.5 136"></path><path d="M100 170 C119.25 162 132.725 150 138.5 136"></path><path d="M100 140 C83 132 71.1 120 66 106"></path><path d="M100 140 C117 132 128.9 120 134 106"></path><path d="M100 110 C85.25 102 74.925 90 70.5 76"></path><path d="M100 110 C114.75 102 125.075 90 129.5 76"></path><path d="M100 80 C87.5 72 78.75 60 75 46"></path><path d="M100 80 C112.5 72 121.25 60 125 46"></path><path d="M100 50 C89.75 42 82.575 30 79.5 16"></path><path d="M100 50 C110.25 42 117.425 30 120.5 16"></path></svg>
+    <div style="position:relative;max-width:1440px;margin:0 auto;padding:clamp(96px,11vw,160px) clamp(20px,3vw,40px);display:flex;flex-wrap:wrap;gap:56px clamp(32px,6vw,110px)">
+    <div style="flex:1 1 380px;min-width:0">
+      <h2 style="margin:0;font-weight:700;font-size:clamp(52px,7vw,112px);line-height:.92;letter-spacing:-.05em;text-wrap:balance">Poďme na to.</h2>
+      <p style="margin:24px 0 0;max-width:420px;font-size:18px;color:#B9CDB9;text-wrap:pretty">Ozvite sa nám. Prídeme na obhliadku a pripravíme pracovný projekt podľa vašich predstáv.</p>
+      <div style="display:flex;flex-direction:column;gap:22px;margin-top:44px">
+        <a href="tel:+421" style="display:flex;flex-direction:column" style-hover="color:#C8E86B"><span style="font-size:14px;color:#8FA595">Telefón</span><span style="font-size:26px;font-weight:600;letter-spacing:-.02em">+421 — doplniť</span></a>
+        <a href="mailto:info@sadoprojekt.sk" style="display:flex;flex-direction:column" style-hover="color:#C8E86B"><span style="font-size:14px;color:#8FA595">E-mail</span><span style="font-size:26px;font-weight:600;letter-spacing:-.02em">doplniť@sadoprojekt.sk</span></a>
+      </div>
+    </div>
+    <form onSubmit="{{ submit }}" style="flex:1.2 1 440px;min-width:0;display:flex;flex-direction:column;gap:12px">
+      <div style="display:flex;flex-wrap:wrap;gap:12px">
+        <input required="" placeholder="Meno" aria-label="Meno" style="flex:1 1 220px;min-width:0;padding:18px 20px;border-radius:14px;border:1.5px solid #2C4A36;background:#123220;color:#FFFFFF;outline:none" style-focus="border:1.5px solid #C8E86B">
+        <input required="" placeholder="Telefón alebo e-mail" aria-label="Kontakt" style="flex:1 1 220px;min-width:0;padding:18px 20px;border-radius:14px;border:1.5px solid #2C4A36;background:#123220;color:#FFFFFF;outline:none" style-focus="border:1.5px solid #C8E86B">
+      </div>
+      <input placeholder="Obec" aria-label="Obec" style="padding:18px 20px;border-radius:14px;border:1.5px solid #2C4A36;background:#123220;color:#FFFFFF;outline:none" style-focus="border:1.5px solid #C8E86B">
+      <textarea rows="5" placeholder="Čo plánujete? Nová záhrada, jazierko, trávnik, závlaha, údržba…" aria-label="Správa" style="padding:18px 20px;border-radius:14px;border:1.5px solid #2C4A36;background:#123220;color:#FFFFFF;outline:none;resize:vertical" style-focus="border:1.5px solid #C8E86B"></textarea>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px;margin-top:8px">
+        <button type="submit" style="padding:18px 32px;border-radius:999px;border:0;background:#C8E86B;color:#0E1A12;font-weight:600;cursor:pointer;transition:background .2s" style-hover="background:#DDF29A">Odoslať dopyt</button>
+        <span style="font-size:15px;color:#B9CDB9">{{ formNote }}</span>
+      </div>
+    </form>
+  </div>
+  <div style="border-top:1px solid #1E3D2A">
+    <div style="max-width:1440px;margin:0 auto;padding:28px clamp(20px,3vw,40px);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px 32px;font-size:14px;color:#B9CDB9">
+      <a href="/" style="display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;letter-spacing:-.03em;color:#FFFFFF">
+        <span style="width:20px;height:20px;border-radius:0 50% 0 50%;background:#C8E86B"></span>
+        <span>SADO<span style="font-weight:500;color:#C8E86B">projekt</span></span>
+      </a>
+      <nav style="display:flex;flex-wrap:wrap;gap:6px 24px">
+        <a href="/sluzby" style-hover="color:#FFFFFF">Služby</a>
+        <a href="/realizacie" style-hover="color:#FFFFFF">Realizácie</a>
+        <a href="/o-nas" style-hover="color:#FFFFFF">O nás</a>
+        <a href="/ochrana-osobnych-udajov" style-hover="color:#FFFFFF">Ochrana osobných údajov</a>
+      </nav>
+      <span>© 2026 SADOprojekt</span>
+    </div>
+  </div>
+</section>
+
+</main>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { sent: false };
+  renderVals() {
+    return {
+      formNote: this.state.sent ? 'Ďakujeme, čoskoro sa vám ozveme.' : 'Odpovedáme spravidla do pár dní.',
+      submit: e => { e.preventDefault(); this.setState({ sent: true }); }
+    };
+  }
+}
+</script>
+</body>
+</html>

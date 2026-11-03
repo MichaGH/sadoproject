@@ -1,26 +1,95 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* Brand tokens and fluid measurements from the supplied design. */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-ink: #0e1a12;
+  --color-forest: #1f5132;
+  --color-forest-hover: #143823;
+  --color-deep-green: #163a24;
+  --color-lime: #c8e86b;
+  --color-lime-hover: #ddf29a;
+  --color-muted: #4e5a52;
+  --color-subtle: #8a958c;
+  --color-sage: #f1f5ec;
+  --color-line: #d5ded1;
+  --color-contact: #0d2617;
+  --color-contact-muted: #b9cdb9;
+  --color-placeholder: #8fa595;
+  --color-field: #123220;
+  --color-field-border: #2c4a36;
+  --color-footer-border: #1e3d2a;
+  --color-hero-copy: #e6eee2;
+  --color-garden-copy: #dcebcf;
+  --color-image-placeholder: #c9d9c0;
+  --text-section: clamp(44px, 5.6vw, 84px);
+  --text-section--line-height: 0.95;
+  --text-section--letter-spacing: -0.05em;
+  --text-service: 23px;
+  --text-service--line-height: 1.2;
+  --text-service--letter-spacing: -0.02em;
+  --spacing-gutter: clamp(20px, 3vw, 40px);
+  --spacing-section: clamp(96px, 11vw, 160px);
+  --container-site: 1440px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 1.5rem;
+    color-scheme: light;
+  }
+
+  body {
+    background: white;
+    color: var(--color-ink);
+    font-family: var(--font-geist-sans), system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  ::selection {
+    background: var(--color-lime);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-lime);
+    outline-offset: 5px;
+  }
+
+  button:not(:disabled),
+  summary {
+    cursor: pointer;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@utility site-container {
+  margin-inline: auto;
+  max-width: var(--container-site);
+  padding-inline: var(--spacing-gutter);
+}
+
+@utility contact-field {
+  min-width: 0;
+  border: 1.5px solid var(--color-field-border);
+  border-radius: 0.875rem;
+  background: var(--color-field);
+  padding: 1.125rem 1.25rem;
+  color: white;
+  outline: none;
+
+  &::placeholder {
+    color: var(--color-placeholder);
+    opacity: 1;
+  }
+  &:focus {
+    border-color: var(--color-lime);
+  }
 }
